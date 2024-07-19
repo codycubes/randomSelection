@@ -1,0 +1,55 @@
+.name-picker {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .name-picker h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .name-picker button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .name-picker .display-area {
+    min-height: 50px;
+  }
+  
+  .name-picker .shuffling {
+    font-size: 1.5rem;
+    color: #888;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0.5; }
+  }
+  
+  .name-picker .selected-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .name-picker .picked-names {
+    margin-top: 30px;
+  }
+  
+  .name-picker .picked-names h2 {
+    font-size: 1.5rem;
+  }
+  
+  .name-picker .picked-names ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .name-picker .picked-names li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
