@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './NamePicker.css';
+import { Card } from '../Card/Card';
 
 const names = [
   'Shoki', 'Tshepo', 'Cassius', 'Kamogelo', 'Nqobile',
@@ -52,11 +53,14 @@ export const NamePicker = () => {
           {pickedNames.length === 0 ? (
             <p>No names picked yet.</p>
           ) : (
-            <ul>
+            // <ul>
+            <div className='CardContainer'>
               {pickedNames.map(name => (
-                <li key={name}>{name}</li>
+                <Card key={name} name={name}/>
+                // <li key={name}>{name}</li>
               ))}
-            </ul>
+              </div>
+            // </ul>
           )}
         </div>
       </div>
